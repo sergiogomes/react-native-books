@@ -21,7 +21,7 @@ const BookList = ({ navigation }) => {
               key={item.key}
               style={styles.buttonStyle}
               onPress={() => {
-                navigation.navigate("BookDetail");
+                navigation.navigate("BookDetail", { book: item });
               }}
             >
               <Text>{item.title}</Text>
